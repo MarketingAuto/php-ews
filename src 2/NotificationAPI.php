@@ -5,6 +5,7 @@ namespace garethp\ews;
 use garethp\ews\API\ClassMap;
 use garethp\ews\API\Type\BaseFolderIdType;
 use garethp\ews\API\Type\FolderIdType;
+use Psr\Log\LoggerInterface;
 
 class NotificationAPI extends API
 {

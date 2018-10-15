@@ -10,6 +10,7 @@ class ClassMap
         'AddDelegateResponseMessageType' => '\\garethp\\ews\\API\\Message\\AddDelegateResponseMessageType',
         'ApplyConversationActionType' => '\\garethp\\ews\\API\\Message\\ApplyConversationActionType',
         'ApplyConversationActionResponseType' => '\\garethp\\ews\\API\\Message\\ApplyConversationActionResponseType',
+        'ArrayOfRecipientsType' => '\\garethp\\ews\\API\\Message\\ArrayOfRecipientsType',
         'ArrayOfResponseMessagesType' => '\\garethp\\ews\\API\\Message\\ArrayOfResponseMessagesType',
         'AttachmentInfoResponseMessageType' => '\\garethp\\ews\\API\\Message\\AttachmentInfoResponseMessageType',
         'BaseDelegateResponseMessageType' => '\\garethp\\ews\\API\\Message\\BaseDelegateResponseMessageType',

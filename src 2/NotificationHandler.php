@@ -8,6 +8,7 @@ use garethp\ews\API\ExchangeWebServices;
 use garethp\ews\API\Message\SendNotificationResponseMessageType;
 use garethp\ews\API\Message\SendNotificationResponseType;
 use garethp\ews\API\Message\SendNotificationResultType;
+use Psr\Log\LoggerInterface;
 
 class NotificationHandler
 {
@@ -21,12 +22,15 @@ class NotificationHandler
     // @codingStandardsIgnoreLine
     public function SendNotification(SendNotificationResponseType $message)
     {
+
         $message = ExchangeWebServices::drillDownResponseLevels($message);
 
         $handler = $this->handler;
+
         $response = $handler($message);
 
         if ($response !== SubscriptionStatusType::OK && $response !== SubscriptionStatusType::UNSUBSCRIBE) {
+
             throw new Exception('Unexpected Subscription Status Response');
         }
 
