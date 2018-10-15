@@ -1,5 +1,5 @@
 {
-	"name": "garethp/php-ews",
+	"name": "marketingauto/php-ews",
 	"require": {
 		"garethp/http-playback": "^1.0",
 		"ext-curl": "*",
@@ -12,8 +12,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"garethp\\ews\\": "src/",
-			"garethp\\ews\\Test\\": "tests/src"
+			"marketingauto\\ews\\": "src/",
+			"marketingauto\\ews\\Test\\": "tests/src"
 		},
 		"files": [
 			"src/Utilities/ensureIsArray.php",
